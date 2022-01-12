@@ -1,17 +1,6 @@
-/*!
-    Title: Dev Portfolio Template
-    Version: 1.2.2
-    Last Change: 03/25/2020
-    Author: Ryan Fitzgerald
-    Repo: https://github.com/RyanFitzgerald/devportfolio-template
-    Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
 
-    Description: This file contains all the styles associated with the page
-    that don't come from third party libraries. This file gets compiled using
-    Gulp and send to the /css folder which is then loaded on the page.
-*/
 
-@font-face { font-family: Montserrat; src: "https://drive.google.com/drive/u/2/my-drive"; } 
+@font-face { font-family: Montserrat; src: "https://drive.google.com/file/d/1rDgzDpwMQYRsB0XfNSqcEqp_0m0sv5Ht/view?usp=sharing"; } 
 
 /*! header*/
 body{font-family: Montserrat, sans-serif;font-size:16px}body.active{overflow:hidden;z-index:-1}.no-js 
