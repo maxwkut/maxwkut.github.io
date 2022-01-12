@@ -21,7 +21,7 @@ header a:hover{color:#217dbb;text-decoration:none;background:#eee;border-radius:
 /*! lead content part1*/
 #lead{position:relative;height:55vh;min-height:500px;max-height:1080px;background-size:cover;padding:15px;overflow:hidden}
 #lead-content{position:absolute;z-index:10;top:50%;left:50%;transform:translate(-50%, -50%);text-align:center}
-#lead-content h1,#lead-content h2{margin:0}#lead-content h1{color:#fff;font-weight:300;font-size:5em;letter-spacing:0.02em;line-height:1.5em}
+#lead-content h1,#lead-content h2{margin:0}#lead-content h1{color:#fff;font-weight:300;font-size:3.8vw;letter-spacing:0.02vw;line-height:5.5vw}
 #lead-content h2{color:#fff;font-weight:300;font-size:1.5em;margin-bottom:30px}
 #lead-overlay{position:absolute;height:100%;width:100%;top:0;right:0;bottom:0;left:0;background:rgba(22, 23, 24, 0.8);z-index:1}
 #lead-down{position:absolute;left:0;right:0;width:100%;text-align:center;z-index:10;bottom:15px;color:#fff}
