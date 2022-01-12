@@ -26,7 +26,7 @@ header a:hover{color:#217dbb;text-decoration:none;background:#eee;border-radius:
 #lead-down{position:absolute;left:0;right:0;width:100%;text-align:center;z-index:10;bottom:1px;color:#fff}
 #lead-down span{cursor:pointer;display:block;margin:0 auto;width:35px;height:35px;border-radius:50%;border:3px solid #a0cfee;text-align:center}
 #lead-down i{animation:pulsate 1.5s ease;animation-iteration-count:infinite;padding-top:5px}@keyframes pulsate{0%{transform:scale(1, 1)}50%{transform:scale(1.2, 1.2)}100%{transform:scale(1, 1)}}
-
+.socialneu{margin-right: 7.8%}.socialneu li{display:inline-block;font-size:25px;list-style:none}.socialneu a{display:block;color:#ffffff;padding:10px}.socialneu a:hover{color:#3498db}
 /*! about*/
 #about{padding:90px 15px;border-bottom:1px solid #dcd9d9 }#about h2{color:#333333; font-size: 50px;font-weight:300}#about p{color:#8a8074; margin-left:40px}#about{text-align:center}#about p{text-align:center}
 
@@ -42,13 +42,14 @@ header a:hover{color:#217dbb;text-decoration:none;background:#eee;border-radius:
 
 @media only screen and (max-width: 1250px){#lead{height:auto;min-height:auto;max-height:auto;padding:100px 15px}
 #lead-content{position:relative;transform:none;left:auto;top:auto}#lead-content h1{font-size:3.5em}#lead-content h2{font-size:1.3em}
-#about{text-align:center}#about p{text-align:left}}
+#about{text-align:center}#about p{text-align:left}#lead-content div{margin-right: 4.2%}}
 @media only screen and (max-width: 768px){header{position:fixed;display:none;z-index:999;animation:none;bottom:0;height:100%}
-#mobile-menu-open,#mobile-menu-close{display:block}#menu{height:100%;overflow-y:auto;box-shadow:none;border-radius:0;width:100%}#menu li{display:block;margin-bottom:10px}
-#lead-content h1{font-size:2.7em}#lead-content h2{font-size:1.2em}#lead-content a{padding:10px 20px}#lead-down{display:none}.education-block h3,.education-block span{float:none}.project-image{display:none}.project-info{position:relative;margin:0;padding:30px 15px;top:auto;transform:none}
-footer{text-align:center}.social{text-align:center}}
-@media only screen and (max-width: 490px){#lead-content h1{font-size:2em}#lead-content h2{font-size:0.8em}}
+#mobile-menu-open,#mobile-menu-close{display:block}#menu{height:100%;overflow-y:auto;box-shadow:none;border-radius:0;width:100%}#menu li{display:block;margin-bottom:15px}
+#lead-content h1{font-size:2.7em}#lead-content h2{font-size:1.2em}#lead-content a{padding:15px 20px}#lead-down{display:none}.education-block h3,.education-block span{float:none}
+.project-image{display:none}.project-info{position:relative;margin:0;padding:30px 15px;top:auto;transform:none}
+footer{text-align:center}.social{text-align:center}#lead-content div{margin-right:5%}}
+@media only screen and (max-width: 550px){#lead-content h1{font-size:2.3em}#lead-content h2{font-size:0.8em}#lead-content div{margin-right: 9%}#lead-content div li{font-size:20px}}
+@media only screen and (max-width: 425px){#lead-content h1{font-size:2em}#lead-content h2{font-size:0.8em}#lead-content div{margin-right:10%; font-size:15px}}
 
-/*! testttt*/
-.socialneu{margin-right: 5%}.socialneu li{display:inline-block;font-size:25px;list-style:none}.socialneu a{display:block;color:#ffffff;padding:10px}.socialneu a:hover{color:#3498db}
+
 
