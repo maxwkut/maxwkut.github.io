@@ -12,7 +12,7 @@ header a:hover{color:#217dbb;text-decoration:none;background:#eee;border-radius:
 #mobile-menu-close i{vertical-align:middle}footer{padding:50px 0}.copyright{padding-top:20px}.copyright p{margin:0;color:#74808a}.top{text-align:center}
 .top span{cursor:pointer;display:block;margin:15px auto 0 auto;width:35px;height:35px;border-radius:50%;border:3px solid #b9bfc4;text-align:center}.top i{color:#74808a}.social{text-align:right}
 .social ul{margin:5px 0 0 0;padding:0}.social li{display:inline-block;font-size:2.25em;list-style:none}.social a{display:block;color:#74808a;padding:10px}.social a:hover{color:#3498db}
-.btn-rounded-white{display:inline-block;color:#333333;background:#f2f1f6;font-weight:600;padding:15px 25px;border:3px solid #fff;border-radius:30px;transition:.5s ease all}.btn-rounded-white:hover{color:#3498db;background:#fff;text-decoration:none}
+.btn-rounded-white{display:inline-block;color:#333333;background:#f2f1f6;font-weight:600;padding:0.8vw 1.5vw;border:0vw solid #fff;border-radius:2vw;transition:.5s ease all}.btn-rounded-white:hover{color:#3498db;background:#fff;text-decoration:none}
 .shadow{box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24)}.shadow-large{box-shadow:0 3px 6px rgba(0,0,0,0.08),0 3px 6px rgba(0,0,0,0.15)}
 .heading{position:static;display:inline-block;font-size:2em;font-weight:300;margin:0 0 30px 0,}.heading:after{position:absolute;content:'';top:100%;height:1px;width:50px;left:0;right:0;margin:0 auto;background:#ffffff}
 .background-alt{background:#f2f2f5}
@@ -47,5 +47,5 @@ header a:hover{color:#217dbb;text-decoration:none;background:#eee;border-radius:
 footer{text-align:center}.social{text-align:center}}@media only screen and (max-width: 480px){#lead-content h1{font-size:1.5em}#lead-content h2{font-size:1em}#lead-content a{font-size:0.9em;padding:5px 10px}}
 
 /*! testttt*/
-.socialneu{margin-right: 5%}.socialneu li{display:inline-block;font-size:2.25em;list-style:none}.socialneu a{display:block;color:#ffffff;padding:10px}.socialneu a:hover{color:#3498db}
+.socialneu{margin-right: 5%}.socialneu li{display:inline-block;font-size:1vw;list-style:none}.socialneu a{display:block;color:#ffffff;padding:10px}.socialneu a:hover{color:#3498db}
 
