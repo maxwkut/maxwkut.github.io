@@ -33,7 +33,8 @@ header a:hover{color:#217dbb;text-decoration:none;background:#eee;border-radius:
 /*! projects*/
 #projects{padding:50px 15px;border-bottom:1px solid #dcd9d9;text-align:center}
 #projects h2{color:#000000;margin-bottom:50px; font-size: 50px;font-weight:300}.project{position:relative;max-width:1000px;margin:0 auto 30px auto;overflow:hidden;background:#fff;border-radius:4px}
-.project-image{float:left;}.project-info{position:absolute;top:50%;transform:translateY(-50%);margin-left:300px;padding:15px}.project-info h3{font-size:1.5em;font-weight:300;color:#000000;margin:0 0 15px 0}
+.project-image{float:left;}.project-info{position:absolute;top:50%;transform:translateY(-50%);margin-left:300px;padding:15px}.project-info h3{font-size:1.5em;font-weight:300;color:#000000;margin:0 0 0 0}
+.project-info h4{font-size:1em;font-weight:300;color:#000000;margin:0 0 15px 0}
 .project-info p{color:#000000;margin:0 0 15px 0;font-size:0.9em}.no-image .project-info{position:relative;margin:0;padding:30px 15px;transform:none}#more-projects{display:none}
 
 
