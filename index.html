@@ -12,10 +12,15 @@
 <body>
     <header>
         <h1>Max Kutschinski</h1>
-        <nav>
-            <a href="#about">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+        <nav class="navbar">
+            <div class="hamburger" id="hamburger">
+                &#9776; <!-- This is the hamburger icon -->
+            </div>    
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -160,6 +165,11 @@
     }
 
     window.addEventListener('resize', updateCarousel);
+
+    document.getElementById('hamburger').addEventListener('click', function() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active'); // Toggle the 'active' class on the links
+    });
 </script>
 
 </body>

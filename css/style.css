@@ -25,11 +25,75 @@ header h1 {
     font-size: 2rem;
 }
 
-nav a {
+.navbar {
+    position: relative; /* Position context for the dropdown */
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+}
+
+.nav-links {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Display links in a row */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-links li {
+    margin-left: 20px; /* Space between links */
+    width: auto;
+}
+
+.nav-links a {
+    display: block; /* Make links block elements */
     color: #10A37F;
     margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 15px; /* Add padding for better touch targets */
+    transition: transform 0.2s ease; /* Smooth transition for scaling */
+}
+
+.nav-links a:hover {
+    transform: scale(1.1);
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none; /* Hide the hamburger by default */
+    font-size: 24px; /* Size of the hamburger icon */
+    color: white; /* Color of the hamburger icon */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links by default on mobile */
+        flex-direction: column; /* Stack links vertically */
+        top: 50px; /* Position below the header */
+        left: 0; /* Align to the left */
+        background-color: #2E2E2E; /* Background color for dropdown */
+        width: 100%; /* Full width for dropdown */
+        z-index: 1; /* Ensure dropdown appears above other elements */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when active */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon on mobile */
+    }
+
+    .nav-links li {
+        margin-left: 0; /* No margin in mobile view */
+        text-align: center; /* Center align for dropdown items */
+    }
+
+    .nav-links a {
+        padding: 15px; /* Adjust padding for larger touch area */
+    }
 }
 
 section {
@@ -56,9 +120,10 @@ p {
 
 .profile {
     display: flex;
-    align-items: center;
     gap: 50px;
     margin-top: 20px; /* Space above the button row */
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center items horizontally */
 }
 
 .profile-picture {
@@ -72,6 +137,17 @@ p {
 
 .profile-picture:hover {
     transform: scale(1.1); /* Zooms in the picture slightly */
+}
+
+@media (min-width: 769px) {
+    .profile {
+        flex-direction: row; /* Change to row layout on larger screens */
+    }
+
+    .profile-picture {
+        margin-right: 20px; /* Space between image and text on larger screens */
+    }
+
 }
 
 .project-date {
@@ -169,7 +245,18 @@ p {
     cursor: pointer;
     position: absolute;
     top: 50%;
+    z-index: 10; /* Ensure buttons are above other elements */
     transform: translateY(-50%);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .prev{
+        left: 0px; /* Adjust position to ensure visibility on smaller screens */
+    }
+    .next{
+        right: 0px; /* Adjust position to ensure visibility on smaller screens */
+    }
 }
 
 .technologies {
