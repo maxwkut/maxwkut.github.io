@@ -79,7 +79,8 @@ header h1 {
         top: 50px; /* Position below the header */
         left: 0; /* Align to the left */
         background-color: #2E2E2E; /* Background color for dropdown */
-        width: 22vw; /* Full width for dropdown */
+        border-radius: 5%; /* Round edges */
+        width: 30vw; /* Full width for dropdown */
         z-index: 1; /* Ensure dropdown appears above other elements */
     }
 
