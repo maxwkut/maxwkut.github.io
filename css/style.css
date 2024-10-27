@@ -8,25 +8,29 @@
 body {
     background-color: #202123;
     color: #E5E5E5;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
     align-items: center;
     padding: 20px;
 }
 
 header {
     display: flex;
+    display: -webkit-flex;
     justify-content: space-between;
     width: 100%;
     max-width: 800px;
 }
 
 header h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 .navbar {
     position: relative; /* Position context for the dropdown */
+    font-size: 1.2rem;
     justify-content: space-between;
     align-items: center; /* Center items vertically */
 }
@@ -71,15 +75,17 @@ header h1 {
     .nav-links {
         display: none; /* Hide links by default on mobile */
         flex-direction: column; /* Stack links vertically */
+        -webkit-flex-direction: column;
         top: 50px; /* Position below the header */
         left: 0; /* Align to the left */
         background-color: #2E2E2E; /* Background color for dropdown */
-        width: 100%; /* Full width for dropdown */
+        width: 22vw; /* Full width for dropdown */
         z-index: 1; /* Ensure dropdown appears above other elements */
     }
 
     .nav-links.active {
         display: flex; /* Show links when active */
+        display: -webkit-flex;
     }
 
     .hamburger {
@@ -103,6 +109,7 @@ section {
 }
 
 h2 {
+    /* font-size: 1.7rem; */
     color: #10A37F;
     margin-bottom: 10px;
 }
@@ -120,15 +127,17 @@ p {
 
 .profile {
     display: flex;
+    display: -webkit-flex;
     gap: 50px;
     margin-top: 20px; /* Space above the button row */
     flex-direction: column; /* Stack items vertically on small screens */
+    -webkit-flex-direction: column;
     align-items: center; /* Center items horizontally */
 }
 
 .profile-picture {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #10A37F; /* Optional accent border */
@@ -142,6 +151,7 @@ p {
 @media (min-width: 769px) {
     .profile {
         flex-direction: row; /* Change to row layout on larger screens */
+        -webkit-flex-direction: row;
     }
 
     .profile-picture {
@@ -166,6 +176,7 @@ p {
     height: 30px; /* Height for round buttons */
     border-radius: 50%; /* Makes the button round */
     display: flex; /* Aligns icon in the center */
+    display: -webkit-flex;
     align-items: center; /* Center the icon vertically */
     justify-content: center; /* Center the icon horizontally */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
@@ -181,6 +192,7 @@ p {
 .carousel {
     position: relative;
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     max-width: 800px;
     margin: 0 auto;
@@ -194,6 +206,7 @@ p {
 
 .carousel-track {
     display: flex;
+    display: -webkit-flex;
     transition: transform 0.5s ease; /* Smooth sliding transition */
 }
 
@@ -272,6 +285,7 @@ p {
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margin */
     display: flex; /* Align items horizontally */
+    display: -webkit-flex;
     flex-wrap: wrap; /* Allow items to wrap */
     gap: 10px; /* Space between items */
 }
@@ -285,6 +299,7 @@ p {
 
 .contact-buttons {
     display: flex; /* Align buttons in a row */
+    display: -webkit-flex;
     justify-content: left; /* Left align the buttons */
     gap: 20px; /* Space between buttons */
     margin-top: 20px; /* Space above the button row */
@@ -298,6 +313,7 @@ p {
     height: 45px; /* Height for round buttons */
     border-radius: 50%; /* Makes the button round */
     display: flex; /* Aligns icon in the center */
+    display: -webkit-flex;
     align-items: center; /* Center the icon vertically */
     justify-content: center; /* Center the icon horizontally */
     transition: background-color 0.3s ease; /* Smooth transition on hover */
