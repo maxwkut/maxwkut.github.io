@@ -143,7 +143,7 @@ p {
     object-fit: cover;
 /*     object-position: center; /* Adjust this value to position your face */ */
     border: 4px solid #10A37F; /* Optional accent border */
-/*     transform: translate(-50px, -50px) scale(1.5); */
+    transform: translate(-100px, -100px) scale(1.5);
     transition: transform 0.3s ease; /* Smooth transition */
 }
 
