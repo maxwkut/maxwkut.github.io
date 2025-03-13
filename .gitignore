@@ -316,6 +316,7 @@ venv.bak/
 # mkdocs documentation
 /site
 
+.git.bak
 # mypy
 .mypy_cache/
 .dmypy.json
