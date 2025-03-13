@@ -1,202 +1,196 @@
 {
-  "name": "Your Name",
-  "label": "Optional Label",
-  "image_path": "img/default-image.png",
+  "name": "Max Kutschinski",
+  "label": "Data Scientist",
+  "image_path": "img/pp10.jpg",
   "contact": {
-    "email": "FirstLast@Sample.com",
-    "phone": "123-456-7890",
-    "location": "City, State, Country"
+    "email": "max.kutschinski@gmail.com",
+    "phone": "",
+    "location": "Washington DC-Baltimore Area, United States"
   },
-  "summary": "A short summary of who you are, your background, experience, and interests to give visitors a quick introduction to you.",
+  "summary": "Experienced in building customized generative AI and machine learning solutions",
   "base_url": "127.0.0.1:5500",
   "social_links": [
     {
-      "label": "Personal Website",
-      "url": "https://sample.com",
-      "svg_path": "img/globe.svg"
-    },
-    {
-      "label": "First Social",
-      "url": "https://sample.com",
+      "label": "Linkedin",
+      "url": "https://linkedin.com/in/maxkuts",
       "svg_path": "img/linkedin.svg"
     },
     {
-      "label": "Second Social",
-      "url": "https://sample.com",
+      "label": "Github",
+      "url": "https://github.com/maxwkut",
       "svg_path": "img/github.svg"
     }
   ],
   "work_experience": [
     {
-      "company": "Latest Job",
-      "position": "Position One",
-      "url": "https://sample.com",
-      "start_date": "01/01/2020",
+      "company": "National Security Agency",
+      "position": "Data Scientist",
+      "url": "https://nsa.gov",
+      "start_date": "02/2024",
       "end_date": "Present",
-      "summary": "Short summary about present job and what the position entails",
+      "summary": "",
       "highlights": [
-        "First Duty of Current Job",
-        "Second Duty of Current Job",
-        "Third Duty of Current Job"
+        "Optimized LLM inference, achieving a 3x reduction in inter-token latency and significantly accelerating response times without sacrificing model accuracy",
+        "Deployed a performance monitoring application for self-hosted LLMs with vLLM using Grafana and Prometheus",
+        "Trained LLMs to induce reasoning behavior using supervised fine-tuning and reinforcement learning",
+        "Designed MLOps framework for NSA's big data analytics platform using open-source tools such as Mlflow and Evidently to support 200+ AI practicioners",
+        "Built a reference implementation for adopting the end-to-end MLOps framework and made a website with Mkdocs to serve documentation and tutorials"
       ]
     },
     {
-      "company": "Previous Job",
-      "position": "Position Two",
-      "url": "https://sample.com",
-      "start_date": "01/01/2010",
-      "end_date": "01/01/2020",
-      "summary": "Short summary about previous job and what that position entailed",
+      "company": "LMI",
+      "position": "Data Scientist",
+      "url": "https://lmisolutions.com/",
+      "start_date": "11/2022",
+      "end_date": "02/2022",
+      "summary": "",
       "highlights": [
-        "First Duty of Previous Job",
-        "Second Duty of Previous Job",
-        "Third Duty of Previous Job"
+        "Transformed and consolidated large-scale datasets with millions of records from disparate data sources using PySpark, creating reliable pipelines and data models for effective analysis and modeling",
+        "Developed and deployed machine learning models to forecast monthly demand for different types of ammunition, improving existing forecasts by 52%",
+        "Built and interactive dashboard using Palantir's data platform, managing the Army's ammunition resupply process throughout the entire U.S. and serving 100+ users"
       ]
     }
   ],
   "projects": [
     {
-      "title": "My First Project",
-      "summary": "Short summary about my first project",
-      "url": "https://sample.com",
+      "title": "VideoInsight AI",
+      "summary": "Chat with your videos!",
+      "url": "https://github.com/maxwkut/multimodal_RAG",
       "highlights": [
-        "First Highlight of Project One",
-        "Second Highlight of Project One",
-        "Third Highlight of Project One"
+        "Built a multimodal RAG application with Python that allows users to ask questions about their videos",
+        "Implemented vector database and custom embedding model based on CLIP to optimize semantic search and retrieval accuracy",
+        "Developed a user-friendly interface with Gradio, facilitating seamless interaction and allowing users to see the retrieved video segments",
+        "Deployed the application with Docker on AWS Lightsail"
       ],
       "images": [
         {
-          "img_path": "https://picsum.photos/600/338?random=1",
-          "caption": "Image Caption 1"
-        },
-        {
-          "img_path": "https://picsum.photos/600/338?random=2",
-          "caption": "Image Caption 2"
-        },
-        {
-          "img_path": "https://picsum.photos/600/338?random=3",
-          "caption": "Image Caption 3"
+          "img_path": "img/rag_demo.mp4",
+          "caption": "VideoInsight AI Demo"
         }
       ]
     },
     {
-      "title": "My Second Project",
-      "summary": "Short summary about my second project",
-      "url": "https://sample.com",
+      "title": "Demand Forecasting for City Bike Rentals",
+      "summary": "A key factor in the success of bike-sharing programs is the efficient allocation of rental bikes across the city. This study aims to predict bike demand based on time differences by making hourly forecasts over a 24-hour horizon using time series, deep learning, and tree-based models.",
+      "url": "https://github.com/maxwkut/BikeDemand/blob/main/BikeFinal.pdf",
       "highlights": [
-        "First Highlight of Project Two",
-        "Second Highlight of Project Two",
-        "Third Highlight of Project Two"
+        "Generated hourly bike demand forecasts for the next day using time series and ML models in R and Python",
+        "Built ML model with 58% error reduction compared to seasonal naive baseline forecasts",
+        "Increased efficiency of city-wide bike allocation by making forecasts with an average error of 78 bikes / hour"
       ],
       "images": [
         {
-          "img_path": "https://picsum.photos/600/338?random=4",
-          "caption": "Image Caption 4"
+          "img_path": "img/bike1.png",
+          "caption": ""
         },
         {
-          "img_path": "https://picsum.photos/600/338?random=5",
-          "caption": "Image Caption 5"
+          "img_path": "img/bike2.png",
+          "caption": "Full paper on Github"
         },
         {
-          "img_path": "https://picsum.photos/600/338?random=6",
-          "caption": "Image Caption 6"
+          "img_path": "img/bike3.png",
+          "caption": ""
         }
-      ]
-    }
-  ],
-  "volunteer_experience": [
-    {
-      "organization": "Latest Organization",
-      "position": "Position One",
-      "url": "https://sample.com",
-      "start_date": "01/01/2020",
-      "end_date": "Present",
-      "summary": "Short summary about present volunteer work",
-      "highlights": [
-        "First Duty of Current Organization",
-        "Second Duty of Current Organization",
-        "Third Duty of Current Organization"
       ]
     },
     {
-      "organization": "Previous Organization",
-      "position": "Position Two",
-      "url": "https://sample.com",
-      "start_date": "01/01/2010",
-      "end_date": "01/01/2020",
-      "summary": "Short summary about previous volunteer work",
+      "title": "Web Traffic Forecasting",
+      "summary": "Forecasting web traffic helps businesses better understand future trends and user behavior and can be leveraged to improve IT infrastructure. This analysis uses time series methods to forecast the number of daily website visits over a 30-day horizon.",
+      "url": "https://github.com/maxwkut/Web-Traffic-Forecasting/blob/main/WebTraffic.pdf",
       "highlights": [
-        "First Duty of Previous Organization",
-        "Second Duty of Previous Organization",
-        "Third Duty of Previous Organization"
+        "Designed time series models in R for predicting daily website visits over a 30-day horizon",
+        "Analyzed user growth by identifying user trends and behaviors over the last 5 years",
+        "Supported IT infrastructure planning by generating point forecasts with an average error of 9%"
+      ],
+      "images": [
+        {
+          "img_path": "img/web1.png",
+          "caption": ""
+        },
+        {
+          "img_path": "img/web2.png",
+          "caption": "Full paper on Github"
+        },
+        {
+          "img_path": "img/web3.png",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "title": "Loan Default Prediction",
+      "summary": "Delinquent borrowers are a major risk factor in peer-to-peer lending. This analysis implements machine learning methods to predict if a person will default based on their loan application, allowing the business to approve a higher quality of loan applicants and therefore increasing returns to investors.",
+      "url": "https://maxwkut.shinyapps.io/LendingClub/",
+      "highlights": [
+        "Built an interactive UI with R Shiny that offers 17+ configurable components to calculate default probability",
+        "Developed a classification model in R to identify high risk loan applications with 93% accuracy"
+      ],
+      "images": [
+        {
+          "img_path": "img/loan.png",
+          "caption": "UI built with R Shiny"
+        }
       ]
     }
   ],
   "education": [
     {
-      "institution": "Institution One",
-      "location": "Institution One Location",
-      "url": "https://sample.com",
+      "institution": "Texas A&M University",
+      "date": "12/2022",
+      "url": "https://artsci.tamu.edu/statistics/index.html",
       "degrees": [
-        "Master of Science in Computer Science",
-        "Minor in Mathematics"
+        "M.S. Statistics"
       ],
-      "honors": ["Outstanding Student Award", "Dean's List"],
-      "gpa_cumulative": "3.5",
-      "gpa_major": "4.0",
-      "graduation_date": "01/01/2005"
+      "honors": "",
+      "gpa_cumulative": "",
+      "gpa_major": ""
     },
     {
-      "institution": "Institution Two",
-      "location": "Institution Two Location",
-      "url": "https://sample.com",
-      "degrees": ["Bachelor of Science in Physics"],
-      "honors": ["Scholarship Recipient"],
-      "gpa_cumulative": "3.2",
-      "gpa_major": "3.9",
-      "graduation_date": "01/01/2000"
+      "institution": "University of Texas at Austin",
+      "date": "05/2020",
+      "url": "https://www.utexas.edu/",
+      "degrees": ["B.A. Mathematics, Economics"],
+      "other": "Applied Statistical Modeling Certificate",
+      "gpa_cumulative": "",
+      "gpa_major": ""
     }
   ],
-  "skills": [
+  "certifications": [
     {
-      "name": "My First Skill",
-      "proficiency": 100,
-      "proficiency_label": "Proficiency Level"
+      "name": "Oracle AI Vector Search Certified Professional",
+      "issuer": "Oracle",
+      "url": "",
+      "date_issued": "03/2025",
+      "date_expires": "",
+      "credential_id": "101286828DB23AIOCP"
     },
     {
-      "name": "My Second Skill",
-      "proficiency": 80,
-      "proficiency_label": "Proficiency Level"
+      "name": "AWS Certified Machine Learning - Specialty",
+      "issuer": "Amazon Web Services (AWS)",
+      "url": "",
+      "date_issued": "12/2023",
+      "date_expires": "",
+      "credential_id": "WWDVNFELY1R41KGO"
     }
   ],
   "interests": [
     {
-      "name": "My First Hobby",
-      "summary": "Short summary about my first Hobby",
+      "name": "Dogs",
+      "summary": "I like to spend time outdoors with my 7 year old German Shepherd / Husky mix named Luna",
       "images": [
         {
-          "img_path": "https://picsum.photos/600/338?random=7",
-          "caption": "Image Caption 7"
-        },
-        {
-          "img_path": "https://picsum.photos/600/338?random=8",
-          "caption": "Image Caption 8"
+          "img_path": "img/Luna.png",
+          "caption": "Luna"
         }
       ]
     },
     {
-      "name": "My Second Hobby",
-      "summary": "Short summary about my second hobby",
-      "images": [
-        {
-          "img_path": "https://picsum.photos/600/338?random=9",
-          "caption": "Image Caption 9"
-        },
-        {
-          "img_path": "https://picsum.photos/600/338?random=10",
-          "caption": "Image Caption 10"
-        }
-      ]
+      "name": "Fitness",
+      "summary": ""
+    },
+    {
+      "name": "Cooking",
+      "summary": ""
     }
   ],
   "languages": [
@@ -205,20 +199,12 @@
       "fluency": "Native speaker"
     },
     {
-      "language": "American Sign Language",
-      "fluency": "Professional Working Proficiency"
-    }
-  ],
-  "references": [
-    {
-      "name": "Person One",
-      "relation": "Previous Boss",
-      "reference": "Some nice things that Person One said about you, your work ethic, and how you provided value to their team."
+      "language": "German",
+      "fluency": "Native speaker"
     },
     {
-      "name": "Person Two",
-      "relation": "Previous Coworker",
-      "reference": "More kind things that Person Two said about you, what it was like working with you, and things you've accomplished."
+      "language": "Portuguese",
+      "fluency": "Beginner"
     }
   ]
 }
