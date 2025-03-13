@@ -175,6 +175,14 @@
   ],
   "interests": [
     {
+      "name": "Fitness",
+      "summary": ""
+    },
+    {
+      "name": "Cooking",
+      "summary": ""
+    },
+    {
       "name": "Dogs",
       "summary": "I like to spend time outdoors with my 7 year old German Shepherd / Husky mix named Luna",
       "images": [
@@ -183,14 +191,6 @@
           "caption": "Luna"
         }
       ]
-    },
-    {
-      "name": "Fitness",
-      "summary": ""
-    },
-    {
-      "name": "Cooking",
-      "summary": ""
     }
   ],
   "languages": [
