@@ -119,13 +119,14 @@
                       <img src="{{ job.logo_url }}" alt="{{ job.company }} logo" class="company-logo">
                     {% endif %}
                     <div class="job-title-info">
-                      <h3>
+                      <h3 class="job-position">{{ job.position }}</h3>
+                      <p class="job-company">
                         {% if job.url %}
-                          {{ job.position }} at <a href="{{ job.url }}">{{ job.company }}</a>
+                          <a href="{{ job.url }}">{{ job.company }}</a>
                         {% else %}
-                          {{ job.position }} at {{ job.company }}
+                          {{ job.company }}
                         {% endif %}
-                      </h3>
+                      </p>
                       {% if job.start_date and job.end_date %}
                         <p class="section-label">{{ job.start_date }} - {{ job.end_date }}</p>
                       {% endif %}
