@@ -44,8 +44,7 @@
         "Optimized LLM inference, achieving a 3x reduction in inter-token latency and significantly accelerating response times without sacrificing model accuracy",
         "Deployed a performance monitoring application for self-hosted LLMs with vLLM using Grafana and Prometheus",
         "Trained LLMs to induce reasoning behavior using supervised fine-tuning and reinforcement learning",
-        "Designed MLOps framework for NSA's big data analytics platform using open-source tools such as Mlflow and Evidently to support 200+ AI practitioners",
-        "Built a reference implementation for adopting the end-to-end MLOps framework and made a website with Mkdocs to serve documentation and tutorials"
+        "Designed MLOps framework for NSA's big data analytics platform using open-source tools such as Mlflow and Evidently to support 200+ AI practitioners"
       ]
     },
     {
