@@ -503,8 +503,8 @@ blockquote {
   }
 
   .company-logo {
-    width: 70px;
-    height: 70px;
+    width: 62px;
+    height: 62px;
   }
 }
 
@@ -514,8 +514,8 @@ blockquote {
   }
 
   .company-logo {
-    width: 56px;
-    height: 56px;
+    width: 48px;
+    height: 48px;
   }
 }
 
@@ -541,8 +541,8 @@ blockquote {
 }
 
 .company-logo {
-  width: 64px;
-  height: 64px;
+  width: 56px;
+  height: 56px;
   border-radius: 4px;
   object-fit: contain;
   background: white;
@@ -577,32 +577,6 @@ blockquote {
   font-weight: 700;
 }
 
-.job-company {
-  margin: 0.25rem 0 0 0;
-  font-size: 1rem;
-  color: #666;
-}
-
 .job-title-info .section-label {
-  margin: 0.25rem 0 0 0;
-}
-
-/* Indent job highlights to align with job title text, not logo */
-.job-header + p + ul,
-.job-header + ul {
-  margin-left: 64px;
-}
-
-@media (min-width: 48rem) {
-  .job-header + p + ul,
-  .job-header + ul {
-    margin-left: 70px;
-  }
-}
-
-@media (max-width: 37.5rem) {
-  .job-header + p + ul,
-  .job-header + ul {
-    margin-left: 56px;
-  }
+  margin: 0.1rem 0 0 0;
 }
