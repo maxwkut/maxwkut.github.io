@@ -161,6 +161,7 @@ section {
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center 30%;
   border: 1px solid #999;
 }
 
@@ -500,6 +501,22 @@ blockquote {
   .side-gallery {
     grid-template-columns: 1fr;
   }
+
+  .company-logo {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .job-header {
+    gap: 0.5rem;
+  }
+
+  .company-logo {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media print {
@@ -513,4 +530,47 @@ blockquote {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
+}
+
+/* Company logo styles */
+.job-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.company-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  object-fit: contain;
+  background: white;
+  border: 1px solid #e1e5e9;
+  padding: 2px;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.company-logo:hover {
+  transform: scale(1.05);
+}
+
+.company-logo:not([src]) {
+  display: none;
+}
+
+.job-title-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.job-title-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.job-title-info .section-label {
+  margin: 0.25rem 0 0 0;
 }

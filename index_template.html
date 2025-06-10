@@ -114,16 +114,23 @@
               <h2 class="section-heading">Work Experience</h2>
               {% for job in work_experience %}
                 <section>
-                  <h3>
-                    {% if job.url %}
-                      {{ job.position }} at <a href="{{ job.url }}">{{ job.company }}</a>
-                    {% else %}
-                      {{ job.position }} at {{ job.company }}
+                  <div class="job-header">
+                    {% if job.logo_url %}
+                      <img src="{{ job.logo_url }}" alt="{{ job.company }} logo" class="company-logo">
                     {% endif %}
-                  </h3>
-                  {% if job.start_date and job.end_date %}
-                    <p class="section-label">{{ job.start_date }} - {{ job.end_date }}</p>
-                  {% endif %}
+                    <div class="job-title-info">
+                      <h3>
+                        {% if job.url %}
+                          {{ job.position }} at <a href="{{ job.url }}">{{ job.company }}</a>
+                        {% else %}
+                          {{ job.position }} at {{ job.company }}
+                        {% endif %}
+                      </h3>
+                      {% if job.start_date and job.end_date %}
+                        <p class="section-label">{{ job.start_date }} - {{ job.end_date }}</p>
+                      {% endif %}
+                    </div>
+                  </div>
                   {% if job.summary %}<p>{{ job.summary }}</p>{% endif %}
                   {% if job.highlights %}
                     <ul>

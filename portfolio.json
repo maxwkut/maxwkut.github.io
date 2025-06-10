@@ -1,13 +1,13 @@
 {
   "name": "Max Kutschinski",
   "label": "Data Scientist",
-  "image_path": "img/pp10.jpg",
+  "image_path": "img/IMG_9208.jpeg",
   "contact": {
     "email": "max.kutschinski@gmail.com",
     "phone": "",
     "location": "Washington DC-Baltimore Area, United States"
   },
-  "summary": "Experienced in building customized generative AI and machine learning solutions",
+  "summary": "",
   "base_url": "127.0.0.1:5500",
   "social_links": [
     {
@@ -23,11 +23,22 @@
   ],
   "work_experience": [
     {
+      "company": "IBM",
+      "position": "Data Scientist",
+      "url": "https://ibm.com",
+      "logo_url": "img/ibm-logo.svg",
+      "start_date": "06/2025",
+      "end_date": "Present",
+      "summary": "",
+      "highlights": []
+    },
+    {
       "company": "National Security Agency",
       "position": "Data Scientist",
       "url": "https://nsa.gov",
+      "logo_url": "img/nsa-logo.svg",
       "start_date": "02/2024",
-      "end_date": "Present",
+      "end_date": "05/2025",
       "summary": "",
       "highlights": [
         "Optimized LLM inference, achieving a 3x reduction in inter-token latency and significantly accelerating response times without sacrificing model accuracy",
@@ -41,6 +52,7 @@
       "company": "LMI",
       "position": "Data Scientist",
       "url": "https://lmisolutions.com/",
+      "logo_url": "img/lmi-logo.svg",
       "start_date": "11/2022",
       "end_date": "02/2024",
       "summary": "",
