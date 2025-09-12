@@ -109,78 +109,51 @@
     <div class="page-content">
       <div class="container">
         <main>
-          {% if work_experience %}
-            <section>
-              <h2 class="section-heading">Work Experience</h2>
-              {% for job in work_experience %}
-                <section>
-                  <div class="job-header">
-                    {% if job.logo_url %}
-                      <img src="{{ job.logo_url }}" alt="{{ job.company }} logo" class="company-logo">
-                    {% endif %}
-                    <div class="job-title-info">
-                      <h3 class="job-position">
-                        {% if job.url %}
-                          {{ job.position }} at <a href="{{ job.url }}">{{ job.company }}</a>
-                        {% else %}
-                          {{ job.position }} at {{ job.company }}
-                        {% endif %}
-                      </h3>
-                      {% if job.start_date and job.end_date %}
-                        <p class="section-label">{{ job.start_date }} - {{ job.end_date }}</p>
-                      {% endif %}
-                    </div>
-                  </div>
-                  {% if job.summary %}<p>{{ job.summary }}</p>{% endif %}
-                  {% if job.highlights %}
-                    <ul>
-                      {% for highlight in job.highlights %}<li>{{ highlight }}</li>{% endfor %}
-                    </ul>
-                  {% endif %}
-                </section>
-              {% endfor %}
-            </section>
-          {% endif %}
-
+          
           {% if projects %}
             <section>
               <h2 class="section-heading">Projects</h2>
               {% for project in projects %}
-                <section>
-                  <h3>
-                    {% if project.url %}
-                      <a href="{{ project.url }}">{{ project.title }}</a>
-                    {% else %}
-                      {{ project.title }}
+                <section class="project-container">
+                  <div class="project-content">
+                    <h3>
+                      {% if project.url %}
+                        <a href="{{ project.url }}">{{ project.title }}</a>
+                      {% else %}
+                        {{ project.title }}
+                      {% endif %}
+                    </h3>
+                    {% if project.date %}<p class="project-date">{{ project.date }}</p>{% endif %}
+                    {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
+                    {% if project.highlights %}
+                      <ul>
+                        {% for highlight in project.highlights %}<li>{{ highlight }}</li>{% endfor %}
+                      </ul>
                     {% endif %}
-                  </h3>
-                  {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
-                  {% if project.highlights %}
-                    <ul>
-                      {% for highlight in project.highlights %}<li>{{ highlight }}</li>{% endfor %}
-                    </ul>
-                  {% endif %}
+                  </div>
                   {% if project.images %}
-                    <div class="gallery main-gallery{% if project.images|length == 1 %} single-image{% endif %}">
-                      {% for img in project.images %}
-                        <figure>
-                          {% if img.img_path.endswith('.mp4') or img.img_path.endswith('.webm') or img.img_path.endswith('.mov') %}
-                            <video width="600"
+                    <div class="project-media">
+                      <div class="gallery main-gallery{% if project.images|length == 1 %} single-image{% endif %}">
+                        {% for img in project.images %}
+                          <figure>
+                            {% if img.img_path.endswith('.mp4') or img.img_path.endswith('.webm') or img.img_path.endswith('.mov') %}
+                              <video width="600"
+                                     height="338"
+                                     controls
+                                     preload="metadata">
+                                <source src="{{ img.img_path }}" type="video/{{ img.img_path.split('.')[-1] }}">
+                                Your browser does not support the video tag.
+                              </video>
+                            {% else %}
+                              <img width="600"
                                    height="338"
-                                   controls
-                                   preload="metadata">
-                              <source src="{{ img.img_path }}" type="video/{{ img.img_path.split('.')[-1] }}">
-                              Your browser does not support the video tag.
-                            </video>
-                          {% else %}
-                            <img width="600"
-                                 height="338"
-                                 src="{{ img.img_path }}"
-                                 alt="{{ img.caption }}">
-                          {% endif %}
-                          <figcaption>{{ img.caption }}</figcaption>
-                        </figure>
-                      {% endfor %}
+                                   src="{{ img.img_path }}"
+                                   alt="{{ img.caption }}">
+                            {% endif %}
+                            <figcaption>{{ img.caption }}</figcaption>
+                          </figure>
+                        {% endfor %}
+                      </div>
                     </div>
                   {% endif %}
                 </section>
@@ -189,109 +162,7 @@
           {% endif %}
         </main>
 
-        <!-- Sidebar Section -->
-        <aside>
-          {% if education %}
-            <section>
-              <h2 class="section-heading">Education</h2>
-              {% for edu in education %}
-                <section>
-                  <h3>
-                    {% if edu.url %}
-                      <a href="{{ edu.url }}">{{ edu.institution }}</a>
-                    {% else %}
-                      {{ edu.institution }}
-                    {% endif %}
-                  </h3>
-                  {% if edu.date %}<p class="section-label">{{ edu.date }}</p>{% endif %}
-                  {% if edu.degrees %}
-                    {% for deg in edu.degrees %}<h3>{{ deg }}</h3>{% endfor %}
-                  {% endif %}
-
-                  {% if edu.other %}
-                    <ul>
-                      <li>{{ edu.other }}</li>
-                    </ul>
-                  {% endif %}
-                  {% if edu.gpa_major or edu.gpa_cumulative or edu.graduation_date %}
-                    <p>
-                      {% if edu.gpa_major %}<span class="block">GPA in Major: {{ edu.gpa_major }}</span>{% endif %}
-                      {% if edu.gpa_cumulative %}<span class="block">Cumulative GPA: {{ edu.gpa_cumulative }}</span>{% endif %}
-                    </p>
-                  {% endif %}
-                </section>
-              {% endfor %}
-            </section>
-          {% endif %}
-
-          {% if certifications %}
-            <section>
-              <h2 class="section-heading">Certifications</h2>
-              {% for cert in certifications %}
-                <section>
-                  <h3>
-                    {% if cert.url %}
-                      <a href="{{ cert.url }}">{{ cert.name }}</a>
-                    {% else %}
-                      {{ cert.name }}
-                    {% endif %}
-                  </h3>
-                  {% if cert.issuer %}<p class="section-label">{{ cert.issuer }}</p>{% endif %}
-                  {% if cert.date_issued %}<p class="section-label">Issued: {{ cert.date_issued }}</p>{% endif %}
-                  {% if cert.date_expires %}<p class="section-label">Expires: {{ cert.date_expires }}</p>{% endif %}
-                  {% if cert.credential_id %}<p>Credential ID: {{ cert.credential_id }}</p>{% endif %}
-                </section>
-              {% endfor %}
-            </section>
-          {% endif %}
-
-          {% if languages %}
-            <section>
-              <h2 class="section-heading">Languages</h2>
-              <ul class="unstyled-list">
-                {% for lang in languages %}
-                  <li>
-                    <h3>{{ lang.language }}</h3>
-                    <p class="section-label">{{ lang.fluency }}</p>
-                  </li>
-                {% endfor %}
-              </ul>
-            </section>
-          {% endif %}
-
-          {% if interests %}
-            <section>
-              <h2 class="section-heading">Interests</h2>
-              {% for interest in interests %}
-                <section>
-                  <h3>{{ interest.name }}</h3>
-                  {% if interest.summary %}<p>{{ interest.summary }}</p>{% endif %}
-                  {% if interest.images %}
-                    <div class="gallery side-gallery{% if interest.images|length == 1 %} single-image{% endif %}">
-                      {% for img in interest.images %}
-                        <figure>
-                          <img width="600"
-                               height="338"
-                               src="{{ img.img_path }}"
-                               alt="{{ img.caption }}">
-                          <figcaption>{{ img.caption }}</figcaption>
-                        </figure>
-                      {% endfor %}
-                    </div>
-                  {% endif %}
-                </section>
-              {% endfor %}
-            </section>
-          {% endif %}
-        </aside>
-      </div>
-    </div>
-
-    <footer class="page-footer">
-      <div class="container">
-        <p>© {{ current_year }} {{ name }}. All rights reserved.</p>
-      </div>
-    </footer>
+       
 
     <script src="js/app.js"></script>
   </body>

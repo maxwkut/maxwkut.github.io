@@ -6,7 +6,7 @@
 
     <!-- Site Info -->
     <title>Max Kutschinski - Portfolio</title>
-    <meta name="description" content="Max Kutschinski - ">
+    <meta name="description" content="Max Kutschinski - My interest is primarily in efficient AI, focusing on developing methods to make training and inference faster, cheaper, and more sustainable. In this context, I am especially interested in self-supervised learning for multimodal data, as it enables the use of large unlabelled datasets and opens new directions for improving efficiency.">
     <meta name="author" content="Max Kutschinski">
 
     <!-- Open Graph Tags: The title of the page for social media sharing. It can match the title tag or be more descriptive. -->
@@ -67,7 +67,7 @@
           
           <div class="header-info">
             <h1>Max Kutschinski</h1>
-            <h2 class="header-label">Data Scientist</h2>
+            
             
               <address>
                 <ul class="inline-list flex-responsive">
@@ -126,7 +126,7 @@
                 
               </ul>
             
-            
+            <p class="header-summary">My interest is primarily in efficient AI, focusing on developing methods to make training and inference faster, cheaper, and more sustainable. In this context, I am especially interested in self-supervised learning for multimodal data, as it enables the use of large unlabelled datasets and opens new directions for improving efficiency.</p>
           </div>
         </div>
       </div>
@@ -136,239 +136,169 @@
       <div class="container">
         <main>
           
-            <section>
-              <h2 class="section-heading">Work Experience</h2>
-              
-                <section>
-                  <div class="job-header">
-                    
-                      <img src="img/ibm-logo.svg" alt="IBM logo" class="company-logo">
-                    
-                    <div class="job-title-info">
-                      <h3 class="job-position">
-                        
-                          Data Scientist at <a href="https://ibm.com">IBM</a>
-                        
-                      </h3>
-                      
-                        <p class="section-label">06/2025 - Present</p>
-                      
-                    </div>
-                  </div>
-                  
-                  
-                </section>
-              
-                <section>
-                  <div class="job-header">
-                    
-                      <img src="img/nsa-logo.svg" alt="National Security Agency logo" class="company-logo">
-                    
-                    <div class="job-title-info">
-                      <h3 class="job-position">
-                        
-                          Data Scientist at <a href="https://nsa.gov">National Security Agency</a>
-                        
-                      </h3>
-                      
-                        <p class="section-label">02/2024 - 05/2025</p>
-                      
-                    </div>
-                  </div>
-                  
-                  
-                    <ul>
-                      <li>Optimized LLM inference, achieving a 3x reduction in inter-token latency and significantly accelerating response times without sacrificing model accuracy</li><li>Deployed a performance monitoring application for self-hosted LLMs with vLLM using Grafana and Prometheus</li><li>Trained LLMs to induce reasoning behavior using supervised fine-tuning and reinforcement learning</li><li>Designed MLOps framework for NSA&#39;s big data analytics platform using open-source tools such as Mlflow and Evidently to support 200+ AI practitioners</li>
-                    </ul>
-                  
-                </section>
-              
-                <section>
-                  <div class="job-header">
-                    
-                      <img src="img/lmi-logo.svg" alt="LMI logo" class="company-logo">
-                    
-                    <div class="job-title-info">
-                      <h3 class="job-position">
-                        
-                          Data Scientist at <a href="https://lmisolutions.com/">LMI</a>
-                        
-                      </h3>
-                      
-                        <p class="section-label">11/2022 - 02/2024</p>
-                      
-                    </div>
-                  </div>
-                  
-                  
-                    <ul>
-                      <li>Transformed and consolidated large-scale datasets with millions of records from disparate data sources using PySpark, creating reliable pipelines and data models for effective analysis and modeling</li><li>Developed and deployed machine learning models to forecast monthly demand for different types of ammunition, improving existing forecasts by 52%</li><li>Built an interactive dashboard using Palantir&#39;s data platform, managing the Army&#39;s ammunition supply chain throughout the entire U.S. and serving 100+ users</li>
-                    </ul>
-                  
-                </section>
-              
-            </section>
-          
-
           
             <section>
               <h2 class="section-heading">Projects</h2>
               
-                <section>
-                  <h3>
-                    
-                      <a href="https://github.com/maxwkut/multimodal_RAG">VideoInsight AI</a>
-                    
-                  </h3>
-                  <p>Chat with your videos!</p>
-                  
-                    <ul>
-                      <li>Built a multimodal RAG application with Python that allows users to ask questions about their videos</li><li>Implemented vector database and custom embedding model based on CLIP to optimize semantic search and retrieval accuracy</li><li>Developed a user-friendly interface with Gradio, facilitating seamless interaction and allowing users to see the retrieved video segments</li><li>Deployed the application with Docker on AWS Lightsail</li>
-                    </ul>
-                  
-                  
-                    <div class="gallery main-gallery single-image">
+                <section class="project-container">
+                  <div class="project-content">
+                    <h3>
                       
-                        <figure>
-                          
-                            <video width="600"
+                        <a href="https://github.com/maxwkut/multimodal_RAG">Multimodal RAG</a>
+                      
+                    </h3>
+                    <p class="project-date">2025</p>
+                    <p>This project is a multimodal RAG application that lets users chat with YouTube videos. By combining video transcription, visual understanding, and retrieval-augmented generation, it enables natural language conversations grounded in the content of a video. Users can ask questions, request summaries, or jump to specific moments without manually scrubbing through timelines. The interface is built with Gradio, providing an intuitive and interactive way to explore video knowledge.</p>
+                    
+                  </div>
+                  
+                    <div class="project-media">
+                      <div class="gallery main-gallery single-image">
+                        
+                          <figure>
+                            
+                              <video width="600"
+                                     height="338"
+                                     controls
+                                     preload="metadata">
+                                <source src="img/rag_demo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                              </video>
+                            
+                            <figcaption>Multimodal RAG Demo</figcaption>
+                          </figure>
+                        
+                      </div>
+                    </div>
+                  
+                </section>
+              
+                <section class="project-container">
+                  <div class="project-content">
+                    <h3>
+                      
+                        <a href="https://github.com/maxwkut/BikeDemand/blob/main/BikeFinal.pdf">Demand Forecasting for City Bike Rentals</a>
+                      
+                    </h3>
+                    <p class="project-date">2022</p>
+                    <p>A key factor in the success of bike-sharing programs is the efficient allocation of rental bikes across a city. This study aims to predict bike demand based on time differences by making hourly forecasts over a 24-hour horizon using time series, deep learning, and tree-based models.</p>
+                    
+                  </div>
+                  
+                    <div class="project-media">
+                      <div class="gallery main-gallery">
+                        
+                          <figure>
+                            
+                              <img width="600"
                                    height="338"
-                                   controls
-                                   preload="metadata">
-                              <source src="img/rag_demo.mp4" type="video/mp4">
-                              Your browser does not support the video tag.
-                            </video>
-                          
-                          <figcaption>VideoInsight AI Demo</figcaption>
-                        </figure>
-                      
+                                   src="img/bike1.png"
+                                   alt="">
+                            
+                            <figcaption></figcaption>
+                          </figure>
+                        
+                          <figure>
+                            
+                              <img width="600"
+                                   height="338"
+                                   src="img/bike2.png"
+                                   alt="Full paper on Github">
+                            
+                            <figcaption>Full paper on Github</figcaption>
+                          </figure>
+                        
+                          <figure>
+                            
+                              <img width="600"
+                                   height="338"
+                                   src="img/bike3.png"
+                                   alt="">
+                            
+                            <figcaption></figcaption>
+                          </figure>
+                        
+                      </div>
                     </div>
                   
                 </section>
               
-                <section>
-                  <h3>
+                <section class="project-container">
+                  <div class="project-content">
+                    <h3>
+                      
+                        <a href="https://github.com/maxwkut/Web-Traffic-Forecasting/blob/main/WebTraffic.pdf">Time Series Analysis of Web Traffic</a>
+                      
+                    </h3>
+                    <p class="project-date">2022</p>
+                    <p>Forecasting web traffic helps businesses better understand future trends and user behavior and can be leveraged to improve IT infrastructure. This analysis uses time series methods to forecast the number of daily website visits over a 30-day horizon.</p>
                     
-                      <a href="https://github.com/maxwkut/BikeDemand/blob/main/BikeFinal.pdf">Demand Forecasting for City Bike Rentals</a>
-                    
-                  </h3>
-                  <p>A key factor in the success of bike-sharing programs is the efficient allocation of rental bikes across the city. This study aims to predict bike demand based on time differences by making hourly forecasts over a 24-hour horizon using time series, deep learning, and tree-based models.</p>
+                  </div>
                   
-                    <ul>
-                      <li>Generated hourly bike demand forecasts for the next day using time series and ML models in R and Python</li><li>Built ML model with 58% error reduction compared to seasonal naive baseline forecasts</li><li>Increased efficiency of city-wide bike allocation by making forecasts with an average error of 78 bikes / hour</li>
-                    </ul>
-                  
-                  
-                    <div class="gallery main-gallery">
-                      
-                        <figure>
-                          
-                            <img width="600"
-                                 height="338"
-                                 src="img/bike1.png"
-                                 alt="">
-                          
-                          <figcaption></figcaption>
-                        </figure>
-                      
-                        <figure>
-                          
-                            <img width="600"
-                                 height="338"
-                                 src="img/bike2.png"
-                                 alt="Full paper on Github">
-                          
-                          <figcaption>Full paper on Github</figcaption>
-                        </figure>
-                      
-                        <figure>
-                          
-                            <img width="600"
-                                 height="338"
-                                 src="img/bike3.png"
-                                 alt="">
-                          
-                          <figcaption></figcaption>
-                        </figure>
-                      
+                    <div class="project-media">
+                      <div class="gallery main-gallery">
+                        
+                          <figure>
+                            
+                              <img width="600"
+                                   height="338"
+                                   src="img/web1.png"
+                                   alt="">
+                            
+                            <figcaption></figcaption>
+                          </figure>
+                        
+                          <figure>
+                            
+                              <img width="600"
+                                   height="338"
+                                   src="img/web2.png"
+                                   alt="Full paper on Github">
+                            
+                            <figcaption>Full paper on Github</figcaption>
+                          </figure>
+                        
+                          <figure>
+                            
+                              <img width="600"
+                                   height="338"
+                                   src="img/web3.png"
+                                   alt="">
+                            
+                            <figcaption></figcaption>
+                          </figure>
+                        
+                      </div>
                     </div>
                   
                 </section>
               
-                <section>
-                  <h3>
+                <section class="project-container">
+                  <div class="project-content">
+                    <h3>
+                      
+                        <a href="https://maxwkut.shinyapps.io/LendingClub/">Loan Default Prediction</a>
+                      
+                    </h3>
+                    <p class="project-date">2022</p>
+                    <p>Delinquent borrowers are a major risk factor in peer-to-peer lending. This analysis implements machine learning methods to predict if a person will default based on their loan application, allowing the business to approve a higher quality of loan applicants and therefore increasing returns to investors.</p>
                     
-                      <a href="https://github.com/maxwkut/Web-Traffic-Forecasting/blob/main/WebTraffic.pdf">Web Traffic Forecasting</a>
-                    
-                  </h3>
-                  <p>Forecasting web traffic helps businesses better understand future trends and user behavior and can be leveraged to improve IT infrastructure. This analysis uses time series methods to forecast the number of daily website visits over a 30-day horizon.</p>
+                  </div>
                   
-                    <ul>
-                      <li>Designed time series models in R for predicting daily website visits over a 30-day horizon</li><li>Analyzed user growth by identifying user trends and behaviors over the last 5 years</li><li>Supported IT infrastructure planning by generating point forecasts with an average error of 9%</li>
-                    </ul>
-                  
-                  
-                    <div class="gallery main-gallery">
-                      
-                        <figure>
-                          
-                            <img width="600"
-                                 height="338"
-                                 src="img/web1.png"
-                                 alt="">
-                          
-                          <figcaption></figcaption>
-                        </figure>
-                      
-                        <figure>
-                          
-                            <img width="600"
-                                 height="338"
-                                 src="img/web2.png"
-                                 alt="Full paper on Github">
-                          
-                          <figcaption>Full paper on Github</figcaption>
-                        </figure>
-                      
-                        <figure>
-                          
-                            <img width="600"
-                                 height="338"
-                                 src="img/web3.png"
-                                 alt="">
-                          
-                          <figcaption></figcaption>
-                        </figure>
-                      
-                    </div>
-                  
-                </section>
-              
-                <section>
-                  <h3>
-                    
-                      <a href="https://maxwkut.shinyapps.io/LendingClub/">Loan Default Prediction</a>
-                    
-                  </h3>
-                  <p>Delinquent borrowers are a major risk factor in peer-to-peer lending. This analysis implements machine learning methods to predict if a person will default based on their loan application, allowing the business to approve a higher quality of loan applicants and therefore increasing returns to investors.</p>
-                  
-                    <ul>
-                      <li>Built an interactive UI with R Shiny that offers 17+ configurable components to calculate default probability</li><li>Developed a classification model in R to identify high risk loan applications with 93% accuracy</li>
-                    </ul>
-                  
-                  
-                    <div class="gallery main-gallery single-image">
-                      
-                        <figure>
-                          
-                            <img width="600"
-                                 height="338"
-                                 src="img/loan.png"
-                                 alt="UI built with R Shiny">
-                          
-                          <figcaption>UI built with R Shiny</figcaption>
-                        </figure>
-                      
+                    <div class="project-media">
+                      <div class="gallery main-gallery single-image">
+                        
+                          <figure>
+                            
+                              <img width="600"
+                                   height="338"
+                                   src="img/loan.png"
+                                   alt="UI built with R Shiny">
+                            
+                            <figcaption>UI built with R Shiny</figcaption>
+                          </figure>
+                        
+                      </div>
                     </div>
                   
                 </section>
@@ -377,149 +307,7 @@
           
         </main>
 
-        <!-- Sidebar Section -->
-        <aside>
-          
-            <section>
-              <h2 class="section-heading">Education</h2>
-              
-                <section>
-                  <h3>
-                    
-                      <a href="https://artsci.tamu.edu/statistics/index.html">Texas A&amp;M University</a>
-                    
-                  </h3>
-                  <p class="section-label">12/2022</p>
-                  
-                    <h3>M.S. Statistics</h3>
-                  
-
-                  
-                  
-                </section>
-              
-                <section>
-                  <h3>
-                    
-                      <a href="https://www.utexas.edu/">University of Texas at Austin</a>
-                    
-                  </h3>
-                  <p class="section-label">05/2020</p>
-                  
-                    <h3>B.A. Mathematics, Economics</h3>
-                  
-
-                  
-                    <ul>
-                      <li>Applied Statistical Modeling Certificate</li>
-                    </ul>
-                  
-                  
-                </section>
-              
-            </section>
-          
-
-          
-            <section>
-              <h2 class="section-heading">Certifications</h2>
-              
-                <section>
-                  <h3>
-                    
-                      Oracle AI Vector Search Certified Professional
-                    
-                  </h3>
-                  <p class="section-label">Oracle</p>
-                  <p class="section-label">Issued: 03/2025</p>
-                  
-                  <p>Credential ID: 101286828DB23AIOCP</p>
-                </section>
-              
-                <section>
-                  <h3>
-                    
-                      AWS Certified Machine Learning - Specialty
-                    
-                  </h3>
-                  <p class="section-label">Amazon Web Services (AWS)</p>
-                  <p class="section-label">Issued: 12/2023</p>
-                  
-                  <p>Credential ID: WWDVNFELY1R41KGO</p>
-                </section>
-              
-            </section>
-          
-
-          
-            <section>
-              <h2 class="section-heading">Languages</h2>
-              <ul class="unstyled-list">
-                
-                  <li>
-                    <h3>English</h3>
-                    <p class="section-label">Native speaker</p>
-                  </li>
-                
-                  <li>
-                    <h3>German</h3>
-                    <p class="section-label">Native speaker</p>
-                  </li>
-                
-                  <li>
-                    <h3>Portuguese</h3>
-                    <p class="section-label">Beginner</p>
-                  </li>
-                
-              </ul>
-            </section>
-          
-
-          
-            <section>
-              <h2 class="section-heading">Interests</h2>
-              
-                <section>
-                  <h3>Fitness</h3>
-                  
-                  
-                </section>
-              
-                <section>
-                  <h3>Cooking</h3>
-                  
-                  
-                </section>
-              
-                <section>
-                  <h3>Dogs</h3>
-                  <p>I like to spend time outdoors with my 7 year old German Shepherd / Husky mix named Luna</p>
-                  
-                    <div class="gallery side-gallery single-image">
-                      
-                        <figure>
-                          <img width="600"
-                               height="338"
-                               src="img/Luna.png"
-                               alt="Luna">
-                          <figcaption>Luna</figcaption>
-                        </figure>
-                      
-                    </div>
-                  
-                </section>
-              
-            </section>
-          
-        </aside>
-      </div>
-    </div>
-
-    <footer class="page-footer">
-      <div class="container">
-        <p>© 2025 Max Kutschinski. All rights reserved.</p>
-      </div>
-    </footer>
+       
 
     <script src="js/app.js"></script>
   </body>

@@ -1,13 +1,13 @@
 {
   "name": "Max Kutschinski",
-  "label": "Data Scientist",
+  "label": "",
   "image_path": "img/IMG_9208.jpg",
   "contact": {
     "email": "max.kutschinski@gmail.com",
     "phone": "",
     "location": "Washington DC-Baltimore Area, United States"
   },
-  "summary": "",
+  "summary": "My interest is primarily in efficient AI, focusing on developing methods to make training and inference faster, cheaper, and more sustainable. In this context, I am especially interested in self-supervised learning for multimodal data, as it enables the use of large unlabelled datasets and opens new directions for improving efficiency.",
   "base_url": "127.0.0.1:5500",
   "social_links": [
     {
@@ -21,74 +21,26 @@
       "svg_path": "img/github.svg"
     }
   ],
-  "work_experience": [
-    {
-      "company": "IBM",
-      "position": "Data Scientist",
-      "url": "https://ibm.com",
-      "logo_url": "img/ibm-logo.svg",
-      "start_date": "06/2025",
-      "end_date": "Present",
-      "summary": "",
-      "highlights": []
-    },
-    {
-      "company": "National Security Agency",
-      "position": "Data Scientist",
-      "url": "https://nsa.gov",
-      "logo_url": "img/nsa-logo.svg",
-      "start_date": "02/2024",
-      "end_date": "05/2025",
-      "summary": "",
-      "highlights": [
-        "Optimized LLM inference, achieving a 3x reduction in inter-token latency and significantly accelerating response times without sacrificing model accuracy",
-        "Deployed a performance monitoring application for self-hosted LLMs with vLLM using Grafana and Prometheus",
-        "Trained LLMs to induce reasoning behavior using supervised fine-tuning and reinforcement learning",
-        "Designed MLOps framework for NSA's big data analytics platform using open-source tools such as Mlflow and Evidently to support 200+ AI practitioners"
-      ]
-    },
-    {
-      "company": "LMI",
-      "position": "Data Scientist",
-      "url": "https://lmisolutions.com/",
-      "logo_url": "img/lmi-logo.svg",
-      "start_date": "11/2022",
-      "end_date": "02/2024",
-      "summary": "",
-      "highlights": [
-        "Transformed and consolidated large-scale datasets with millions of records from disparate data sources using PySpark, creating reliable pipelines and data models for effective analysis and modeling",
-        "Developed and deployed machine learning models to forecast monthly demand for different types of ammunition, improving existing forecasts by 52%",
-        "Built an interactive dashboard using Palantir's data platform, managing the Army's ammunition supply chain throughout the entire U.S. and serving 100+ users"
-      ]
-    }
-  ],
   "projects": [
     {
-      "title": "VideoInsight AI",
-      "summary": "Chat with your videos!",
+      "title": "Multimodal RAG",
+      "date": "2025",
+      "summary": "This project is a multimodal RAG application that lets users chat with YouTube videos. By combining video transcription, visual understanding, and retrieval-augmented generation, it enables natural language conversations grounded in the content of a video. Users can ask questions, request summaries, or jump to specific moments without manually scrubbing through timelines. The interface is built with Gradio, providing an intuitive and interactive way to explore video knowledge.",
       "url": "https://github.com/maxwkut/multimodal_RAG",
-      "highlights": [
-        "Built a multimodal RAG application with Python that allows users to ask questions about their videos",
-        "Implemented vector database and custom embedding model based on CLIP to optimize semantic search and retrieval accuracy",
-        "Developed a user-friendly interface with Gradio, facilitating seamless interaction and allowing users to see the retrieved video segments",
-        "Deployed the application with Docker on AWS Lightsail"
-      ],
+      "highlights": "",
       "images": [
         {
           "img_path": "img/rag_demo.mp4",
-          "caption": "VideoInsight AI Demo"
+          "caption": "Multimodal RAG Demo"
         }
       ]
     },
     {
       "title": "Demand Forecasting for City Bike Rentals",
-      "summary": "A key factor in the success of bike-sharing programs is the efficient allocation of rental bikes across the city. This study aims to predict bike demand based on time differences by making hourly forecasts over a 24-hour horizon using time series, deep learning, and tree-based models.",
+      "date": "2022",
+      "summary": "A key factor in the success of bike-sharing programs is the efficient allocation of rental bikes across a city. This study aims to predict bike demand based on time differences by making hourly forecasts over a 24-hour horizon using time series, deep learning, and tree-based models.",
       "url": "https://github.com/maxwkut/BikeDemand/blob/main/BikeFinal.pdf",
-      "highlights": [
-        "Generated hourly bike demand forecasts for the next day using time series and ML models in R and Python",
-        "Built ML model with 58% error reduction compared to seasonal naive baseline forecasts",
-        "Increased efficiency of city-wide bike allocation by making forecasts with an average error of 78 bikes / hour"
-      ],
+      "highlights": "",
       "images": [
         {
           "img_path": "img/bike1.png",
@@ -105,14 +57,11 @@
       ]
     },
     {
-      "title": "Web Traffic Forecasting",
+      "title": "Time Series Analysis of Web Traffic",
+      "date": "2022",
       "summary": "Forecasting web traffic helps businesses better understand future trends and user behavior and can be leveraged to improve IT infrastructure. This analysis uses time series methods to forecast the number of daily website visits over a 30-day horizon.",
       "url": "https://github.com/maxwkut/Web-Traffic-Forecasting/blob/main/WebTraffic.pdf",
-      "highlights": [
-        "Designed time series models in R for predicting daily website visits over a 30-day horizon",
-        "Analyzed user growth by identifying user trends and behaviors over the last 5 years",
-        "Supported IT infrastructure planning by generating point forecasts with an average error of 9%"
-      ],
+      "highlights": "",
       "images": [
         {
           "img_path": "img/web1.png",
@@ -130,92 +79,16 @@
     },
     {
       "title": "Loan Default Prediction",
+      "date": "2022",
       "summary": "Delinquent borrowers are a major risk factor in peer-to-peer lending. This analysis implements machine learning methods to predict if a person will default based on their loan application, allowing the business to approve a higher quality of loan applicants and therefore increasing returns to investors.",
       "url": "https://maxwkut.shinyapps.io/LendingClub/",
-      "highlights": [
-        "Built an interactive UI with R Shiny that offers 17+ configurable components to calculate default probability",
-        "Developed a classification model in R to identify high risk loan applications with 93% accuracy"
-      ],
+      "highlights": "",
       "images": [
         {
           "img_path": "img/loan.png",
           "caption": "UI built with R Shiny"
         }
       ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "Texas A&M University",
-      "date": "12/2022",
-      "url": "https://artsci.tamu.edu/statistics/index.html",
-      "degrees": [
-        "M.S. Statistics"
-      ],
-      "honors": "",
-      "gpa_cumulative": "",
-      "gpa_major": ""
-    },
-    {
-      "institution": "University of Texas at Austin",
-      "date": "05/2020",
-      "url": "https://www.utexas.edu/",
-      "degrees": ["B.A. Mathematics, Economics"],
-      "other": "Applied Statistical Modeling Certificate",
-      "gpa_cumulative": "",
-      "gpa_major": ""
-    }
-  ],
-  "certifications": [
-    {
-      "name": "Oracle AI Vector Search Certified Professional",
-      "issuer": "Oracle",
-      "url": "",
-      "date_issued": "03/2025",
-      "date_expires": "",
-      "credential_id": "101286828DB23AIOCP"
-    },
-    {
-      "name": "AWS Certified Machine Learning - Specialty",
-      "issuer": "Amazon Web Services (AWS)",
-      "url": "",
-      "date_issued": "12/2023",
-      "date_expires": "",
-      "credential_id": "WWDVNFELY1R41KGO"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Fitness",
-      "summary": ""
-    },
-    {
-      "name": "Cooking",
-      "summary": ""
-    },
-    {
-      "name": "Dogs",
-      "summary": "I like to spend time outdoors with my 7 year old German Shepherd / Husky mix named Luna",
-      "images": [
-        {
-          "img_path": "img/Luna.png",
-          "caption": "Luna"
-        }
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker"
-    },
-    {
-      "language": "German",
-      "fluency": "Native speaker"
-    },
-    {
-      "language": "Portuguese",
-      "fluency": "Beginner"
     }
   ]
 }
