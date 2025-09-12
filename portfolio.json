@@ -7,7 +7,7 @@
     "phone": "",
     "location": "Washington DC-Baltimore Area, United States"
   },
-  "summary": "My interest is primarily in efficient AI, focusing on developing methods to make training and inference faster, cheaper, and more sustainable. In this context, I am especially interested in self-supervised learning for multimodal data, as it enables the use of large unlabelled datasets and opens new directions for improving efficiency.",
+  "summary": "I am broadly interested in efficient AI, focusing on developing methods to make training and inference faster, cheaper, and more sustainable. I‘m also interested in self-supervised learning for multimodal data.",
   "base_url": "127.0.0.1:5500",
   "social_links": [
     {
