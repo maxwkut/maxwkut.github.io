@@ -24,8 +24,8 @@
   "projects": [
     {
       "title": "Multimodal RAG",
-      "date": "2025",
-      "summary": "This project is a multimodal RAG application that lets users chat with YouTube videos. By combining video transcription, visual understanding, and retrieval-augmented generation, it enables natural language conversations grounded in the content of a video. Users can ask questions, request summaries, or jump to specific moments without manually scrubbing through timelines. The interface is built with Gradio, providing an intuitive and interactive way to explore video knowledge.",
+      "date": "",
+      "summary": "Chat with YouTube videos. By combining video transcription, visual understanding, and retrieval-augmented generation, it enables natural language conversations grounded in the content of a video. Users can ask questions, request summaries, or jump to specific moments without manually scrubbing through timelines. The interface is built with Gradio, providing an intuitive and interactive way to explore video knowledge.",
       "url": "https://github.com/maxwkut/multimodal_RAG",
       "highlights": "",
       "images": [
@@ -37,7 +37,7 @@
     },
     {
       "title": "Demand Forecasting for City Bike Rentals",
-      "date": "2022",
+      "date": "",
       "summary": "A key factor in the success of bike-sharing programs is the efficient allocation of rental bikes across a city. This study aims to predict bike demand based on time differences by making hourly forecasts over a 24-hour horizon using time series, deep learning, and tree-based models.",
       "url": "https://github.com/maxwkut/BikeDemand/blob/main/BikeFinal.pdf",
       "highlights": "",
@@ -58,7 +58,7 @@
     },
     {
       "title": "Time Series Analysis of Web Traffic",
-      "date": "2022",
+      "date": "",
       "summary": "Forecasting web traffic helps businesses better understand future trends and user behavior and can be leveraged to improve IT infrastructure. This analysis uses time series methods to forecast the number of daily website visits over a 30-day horizon.",
       "url": "https://github.com/maxwkut/Web-Traffic-Forecasting/blob/main/WebTraffic.pdf",
       "highlights": "",
@@ -79,7 +79,7 @@
     },
     {
       "title": "Loan Default Prediction",
-      "date": "2022",
+      "date": "",
       "summary": "Delinquent borrowers are a major risk factor in peer-to-peer lending. This analysis implements machine learning methods to predict if a person will default based on their loan application, allowing the business to approve a higher quality of loan applicants and therefore increasing returns to investors.",
       "url": "https://maxwkut.shinyapps.io/LendingClub/",
       "highlights": "",
