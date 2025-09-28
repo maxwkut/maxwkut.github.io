@@ -258,7 +258,7 @@ section {
   height: 160px;
   border-radius: 50%;
   overflow: hidden;
-  border: 1px solid #999;
+  border: none;
   margin: 0 auto 1.5rem auto;
   position: relative;
 }
